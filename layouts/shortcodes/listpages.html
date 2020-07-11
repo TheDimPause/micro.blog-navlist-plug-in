@@ -1,3 +1,5 @@
+<p>All pages on this blog:</p>
+
 <ul>
 {{ range where .Site.Pages "Section" "" }}
 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
