@@ -1,5 +1,8 @@
 {
-  "version": "1.0.0",
-  "title": "Pages",
-  "description": "Creates a page with a list of the blog's static pages. A basic site map."
+	"version": "1.0.0",
+	"title": "Pages",
+	"description": "Creates a page with a list of the blog's static pages. A basic site map."
+	"includes": [
+    	"/pagelist.css"
+    ]
 }

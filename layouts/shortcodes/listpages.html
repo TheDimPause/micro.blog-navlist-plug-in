@@ -1,6 +1,7 @@
+
 <p>All pages on this blog:</p>
 
-<ul>
+<ul class="pagelist">
 
 {{ range where .Site.Pages "Type" "page" }}
 	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>

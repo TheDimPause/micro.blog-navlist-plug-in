@@ -1,0 +1,7 @@
+/* list style */
+
+ul.pagelist {
+    list-style: square inside none;
+    font-size: 16px;
+    font-weight: 300;
+}
