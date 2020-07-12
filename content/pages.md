@@ -2,7 +2,7 @@
 title: "Pages"
 url: "/pages/"
 menu: "main"
-weight: 100
+weight: 1
 ---
 
 {{< listpages >}}
