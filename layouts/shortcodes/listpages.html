@@ -4,7 +4,7 @@
 
 
 <ul class="pagelist">
-{{ $list := (where .Site.Pages "Type" "page") }}
+{{ $list := (where .Site.Pages.ByTitle "Type" "page") }}
 		{{ if gt (len $list) 0 }}
 			{{ range $list }}
 				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
