@@ -1,10 +1,24 @@
+<p>Blog: {{ .Site.Title }}</p>
 
 <p>All pages on this blog:</p>
 
+
 <ul class="pagelist">
+{{ $list := (where .Site.Pages "Type" "page") }}
+		{{ if gt (len $list) 0 }}
+			{{ range $list }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+	{{ end }}
+</ul>
 
-{{ range where .Site.Pages "Type" "page" }}
-	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{ end }}
+<p>All post categories used on this blog:</p>
 
+<ul class="pagelist">
+{{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+	{{ if gt (len $list) 0 }}
+			{{ range $list }}
+				<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
+	{{ end }}
 </ul>
