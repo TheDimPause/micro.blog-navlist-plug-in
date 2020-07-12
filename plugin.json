@@ -1,5 +1,5 @@
 {
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"title": "Pages",
 	"description": "Creates a page with a list of the blog's static pages. A basic site map."
 	"includes": [
