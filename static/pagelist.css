@@ -1,6 +1,6 @@
 /* list style */
 
-ul.pagelist {
+.pagelist ul {
     list-style: square inside none;
     font-size: 16px;
     font-weight: 300;
