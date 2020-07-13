@@ -5,7 +5,7 @@
 {{ $list := (where .Site.Pages.ByTitle "Type" "page") }}
 	{{ if gt (len $list) 0 }}
 		<p>All pages on this blog:</p>
-		<ul>>
+		<ul>
 		{{ range $list }}
 			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 		{{ end }}
@@ -15,7 +15,7 @@
 {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
 	{{ if gt (len $list) 0 }}
 		<p>All post categories used on this blog:</p>
-		<ul>>
+		<ul>
 		{{ range $list }}
 			<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 		{{ end }}
