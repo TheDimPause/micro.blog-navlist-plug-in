@@ -5,5 +5,5 @@ menu: "main"
 weight: 1
 ---
 
-{{< listpages >}}
+{{< navlist >}}
 

@@ -1,2 +1,2 @@
-# Micro.blog Pages Plug-in
+# Micro.blog Navigation List Plug-in
  
