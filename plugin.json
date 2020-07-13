@@ -4,5 +4,5 @@
 	"description": "Creates a page with a list of the blog's static pages and other navigation links. A basic site map."
 	"includes": [
     	"/navlist.css"
-    ]
+	]
 }
