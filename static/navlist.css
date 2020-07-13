@@ -1,7 +1,7 @@
 /* list style */
 
 .navlist ul {
-    list-style: square inside none;
+    list-style: square;
     font-size: 16px;
     font-weight: 300;
 }
