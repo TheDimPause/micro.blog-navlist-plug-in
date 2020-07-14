@@ -1,13 +1,13 @@
 /* list style */
 
 .navlist ul {
-    list-style: none;
+	list-style: none;
     font-size: 16px;
     font-weight: 300;
 }
 
 .navlist li {
-  padding: 10px;
+	padding: 10px;
 }
 
 /* links */
