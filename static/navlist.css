@@ -1,7 +1,34 @@
 /* list style */
 
 .navlist ul {
-    list-style: square;
+    list-style: none;
     font-size: 16px;
     font-weight: 300;
+}
+
+.navlist li {
+  padding: 10px;
+}
+
+/* links */
+
+.navlist a {
+	color: #0a84ff;
+	font-weight: normal;
+	text-decoration: none;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.navlist a:visited {
+	color: #0a84ff;
+	font-weight: normal;
+	text-decoration: none;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.navlist a:hover {
+    color: #366d84;
+    text-decoration: underline;
 }
