@@ -12,23 +12,8 @@
 
 /* links */
 
-.navlist a {
-	color: #0a84ff;
-	font-weight: normal;
-	text-decoration: none;
-    padding-left: 1px;
-    padding-right: 1px;
-}
+/* links */
 
-.navlist a:visited {
+.navlist a, a:visited {
 	color: #0a84ff;
-	font-weight: normal;
-	text-decoration: none;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.navlist a:hover {
-    color: #366d84;
-    text-decoration: underline;
 }
