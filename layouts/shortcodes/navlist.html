@@ -7,7 +7,7 @@
 		<p>Links to all pages on this blog:</p>
 		<ul>
 		{{ range $navpages }}
-			<li><a href="{{ .Permalink }}">📄 {{ .Title }}</a></li>
+			<li>📄 <a href="{{ .Permalink }}">{{ .Title }}</a></li>
 		{{ end }}
 		</ul>
 	{{ end }}
