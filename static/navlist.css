@@ -9,9 +9,3 @@
 .navlist li {
 	padding: 10px;
 }
-
-/* links */
-
-.navlist a, a:visited {
-	color: #0a84ff;
-}
