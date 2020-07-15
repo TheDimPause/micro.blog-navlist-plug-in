@@ -12,7 +12,7 @@
 		</ul>
 	{{ end }}
 
-{{ $navcats := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+{{ $navcats := ($.Site.GetPage "taxonomyTerm" "categories").Pages.ByTitle }}
 	{{ if gt (len $navcats) 0 }}
 		<p>Links to all post categories used on this blog:</p>
 		<ul>
