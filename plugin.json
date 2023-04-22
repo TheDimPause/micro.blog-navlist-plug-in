@@ -1,5 +1,5 @@
 {
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"title": "Navigation List",
 	"description": "Creates a page with a list of the blog's static pages and other navigation links. A basic site map.",
 	"includes": [
