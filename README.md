@@ -18,6 +18,12 @@ and make sure the **Include this page in your blog navigation** box is ticked.
 
 I felt this change in the update is more flexible - the link to the navigation list can be named and positioned as desired!
 
+Sample screenshot of a page created by the plug-in:
+
+---
+
 ![](https://raw.githubusercontent.com/TheDimPause/micro.blog-navlist-plug-in/master/Example_Navigation_List.png)
+
+---
 
 
