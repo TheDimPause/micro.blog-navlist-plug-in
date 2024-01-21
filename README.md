@@ -17,3 +17,8 @@ If you do want the link to appear in your site's main menu when the plug-in has 
 and make sure the **Include this page in your blog navigation** box is ticked.
 
 I felt this change in the update is more flexible - the link to the navigation list can be named and positioned as desired!
+
+![](https://raw.githubusercontent.com/TheDimPause/micro.blog-navlist-plug-in
+/Example_Navigation_List.png)
+
+
