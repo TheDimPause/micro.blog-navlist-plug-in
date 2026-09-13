@@ -6,8 +6,7 @@
 	<ul>
 	{{ range site.Pages.ByTitle }}
 		{{ if eq .Type "page" }}
-			{{/* Exclude the homepage, 404, reply pages, AND this navlist page itself */}}
-			{{ if not (or (eq .Title site.Title) (in .Permalink "404") (in .Permalink "reply-by-email") (in .Permalink "/pages/")) }}
+			{{ if not (or (eq .Title site.Title) (in .Permalink "404") (in .Permalink "reply-by-email") (in .Permalink "/pages/") (in .Permalink "/pagelist/")) }}
 				<li>📄 <a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{ end }}
 		{{ end }}
