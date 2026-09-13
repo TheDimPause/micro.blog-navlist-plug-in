@@ -4,17 +4,16 @@
 
 	<p>Links to all pages on this blog:</p>
 	<ul>
-	{{/* Range over ALL pages safely, then filter manually inside the loop */}}
 	{{ range site.Pages.ByTitle }}
 		{{ if eq .Type "page" }}
-			{{ if not (or (eq .Title site.Title) (in .Permalink "404") (in .Permalink "reply-by-email")) }}
+			{{/* Exclude the homepage, 404, reply pages, AND this navlist page itself */}}
+			{{ if not (or (eq .Title site.Title) (in .Permalink "404") (in .Permalink "reply-by-email") (in .Permalink "/pages/")) }}
 				<li>📄 <a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{ end }}
 		{{ end }}
 	{{ end }}
 	</ul>
 
-{{/* Safely check for categories and range the map directly */}}
 {{ if site.Taxonomies.categories }}
 	<p>Links to all post categories used on this blog:</p>
 	<ul>
