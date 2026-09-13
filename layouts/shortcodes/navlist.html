@@ -1,13 +1,13 @@
-<p><strong>{{ .Site.Title }}</strong> — 🔗 <a href="{{ .Site.BaseURL }}">Home Page</a></p>
+<p><strong>{{ site.Title }}</strong> — 🔗 <a href="{{ site.BaseURL }}">Home Page</a></p>
 
 <div class="navlist">
 
-{{ $navpages := (where .Site.Pages.ByTitle "Type" "page") }}
+{{ $navpages := where site.RegularPages "Type" "page" }}
 	{{ if gt (len $navpages) 0 }}
 		<p>Links to all pages on this blog:</p>
 		<ul>
-		{{ range $navpages }}
-			{{ if  or (eq .Title .Site.Title) ( or (in .Permalink "404") (in .Permalink "reply-by-email") ) }}
+		{{ range $navpages.ByTitle }}
+			{{ if or (eq .Title site.Title) (or (in .Permalink "404") (in .Permalink "reply-by-email")) }}
 			{{ else }}
 				<li>📄 <a href="{{ .Permalink }}">{{ .Title }}</a></li>
 			{{ end }}
@@ -15,14 +15,18 @@
 		</ul>
 	{{ end }}
 
-{{ $navcats := ($.Site.GetPage "taxonomyTerm" "categories").Pages.ByTitle }}
+{{ if site.Taxonomies.categories }}
+	{{ $navcats := site.Taxonomies.categories.Alphabetical }}
 	{{ if gt (len $navcats) 0 }}
 		<p>Links to all post categories used on this blog:</p>
 		<ul>
 		{{ range $navcats }}
-			<li>🏷️ <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ with .Page }}
+				<li>🏷️ <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+			{{ end }}
 		{{ end }}
 		</ul>
 	{{ end }}
+{{ end }}
 
 </div>
