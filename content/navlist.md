@@ -1,6 +1,6 @@
 ---
 title: "Pages"
-url: "/pages/"
+url: "/pagelist/"
 type: "page"
 ---
 
